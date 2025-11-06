@@ -76,8 +76,8 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+34644654944" className="transition-colors duration-300 hover:text-white">
-                  +34 644 654 944
+                <a href="tel:+34936090220" className="transition-colors duration-300 hover:text-white">
+                  +34 936 090 220
                 </a>
               </li>
               <li>Atención: Lun-Vie 09:00-18:00 · Sáb 10:00-14:00</li>

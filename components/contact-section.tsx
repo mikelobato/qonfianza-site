@@ -6,8 +6,8 @@ const contactChannels = [
   },
   {
     label: "Teléfono directo",
-    value: "644 654 944",
-    href: "tel:+34644654944",
+    value: "+34 936 090 220",
+    href: "tel:+34936090220",
   },
 ]
 
