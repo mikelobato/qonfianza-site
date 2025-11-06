@@ -39,8 +39,8 @@ export function Footer() {
               className="h-10 w-auto brightness-0 invert"
             />
             <p className="max-w-sm leading-relaxed">
-              Esmeralda Melero Soto, corredora de seguros colegiada. Registro DGSFP F3274. Oficina central en Madrid,
-              operativa en toda España.
+              Esmeralda Melero Soto, corredora de seguros colegiada. Registro DGSFP F3274. Oficina en Viladecans
+              (Barcelona), operativa en toda España.
             </p>
             <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.3em] text-slate-400/70">
               <span>Cifrado y confidencialidad</span>
@@ -71,8 +71,8 @@ export function Footer() {
             <h4 className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200/80">Contacto</h4>
             <ul className="mt-6 space-y-3">
               <li>
-                <a href="mailto:esmeralda@qonfianza.com" className="transition-colors duration-300 hover:text-white">
-                  esmeralda@qonfianza.com
+                <a href="mailto:info@qonfianza.com" className="transition-colors duration-300 hover:text-white">
+                  info@qonfianza.com
                 </a>
               </li>
               <li>

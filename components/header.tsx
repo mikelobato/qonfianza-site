@@ -28,7 +28,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-5 sm:px-6 lg:px-8">
-        <a href="#inicio" className="flex items-center gap-3">
+        <a href="#inicio" className="flex items-center">
           <Image
             src="/logo-qonfianza.svg"
             alt="Qonfianza - Correduría de Seguros"
@@ -37,12 +37,9 @@ export function Header() {
             className="h-12 w-auto"
             priority
           />
-          <span className="hidden text-[0.65rem] font-semibold uppercase tracking-[0.32em] text-emerald-900/70 sm:inline">
-            Correduría boutique
-          </span>
         </a>
 
-        <nav className="hidden items-center gap-8 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-slate-600 md:flex">
+        <nav className="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -55,7 +52,7 @@ export function Header() {
           ))}
           <a
             href="#contacto"
-            className="inline-flex items-center gap-2 rounded-full bg-emerald-700 px-5 py-3 text-white shadow-[0_12px_30px_-20px_rgba(12,116,93,0.9)] transition-colors hover:bg-emerald-800"
+            className="inline-flex items-center gap-2 rounded-full bg-emerald-700 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_12px_30px_-20px_rgba(12,116,93,0.9)] transition-colors hover:bg-emerald-800"
           >
             Contactar
           </a>
@@ -80,7 +77,7 @@ export function Header() {
 
       {open && (
         <div className="md:hidden">
-          <nav className="mx-4 mb-5 rounded-3xl border border-emerald-100 bg-white/95 p-6 text-xs font-semibold uppercase tracking-[0.3em] text-slate-600 shadow-lg shadow-emerald-900/10">
+          <nav className="mx-4 mb-5 rounded-3xl border border-emerald-100 bg-white/95 p-6 text-xs font-medium text-slate-600 shadow-lg shadow-emerald-900/10">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <a

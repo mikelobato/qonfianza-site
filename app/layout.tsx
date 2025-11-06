@@ -1,14 +1,14 @@
 import type React from "react"
-import { Inter, Playfair_Display } from "next/font/google"
+import { Manrope, Cormorant_Garamond } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans-variable",
 })
 
-const playfair = Playfair_Display({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-heading-variable",
@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`${inter.variable} ${playfair.variable} antialiased`}>{children}</body>
+      <body className={`${manrope.variable} ${cormorant.variable} antialiased`}>{children}</body>
     </html>
   )
 }

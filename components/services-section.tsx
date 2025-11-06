@@ -5,7 +5,7 @@ const services = [
   {
     icon: HomeIcon,
     title: "Patrimonio & Multirriesgo",
-    description: "Hogar premium, comunidades, comercios emblemáticos y pymes en crecimiento.",
+    description: "Hogar, comunidades, comercios emblemáticos y pymes en crecimiento.",
     bullets: ["Arquitectura de coberturas a medida", "Peritación independiente", "Asistencia preferente 24/7"],
   },
   {
@@ -16,7 +16,7 @@ const services = [
   },
   {
     icon: CarIcon,
-    title: "Movilidad Premium",
+    title: "Movilidad",
     description: "Coche, moto, flotas corporativas y vehículos de colección.",
     bullets: ["Gestión de siniestros delegada", "Vehículo de sustitución garantizado", "Condiciones exclusivas"],
   },
@@ -34,7 +34,7 @@ export function ServicesSection() {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-full bg-gradient-to-b from-white via-transparent to-transparent" />
       <div className="relative mx-auto grid max-w-6xl gap-16 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
         <div className="space-y-8">
-          <span className="inline-flex items-center rounded-full border border-emerald-200 bg-white px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.32em] text-emerald-900/70">
+          <span className="inline-flex items-center rounded-full border border-emerald-200 bg-white px-4 py-2 text-xs font-semibold text-emerald-900/70">
             Servicios a medida
           </span>
           <div className="space-y-6">
@@ -61,7 +61,7 @@ export function ServicesSection() {
 
           <a
             href="#contacto"
-            className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-emerald-700 transition-all duration-300 hover:border-emerald-400 hover:text-emerald-900 hover:shadow-lg"
+            className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white px-6 py-3 text-sm font-semibold text-emerald-700 transition-all duration-300 hover:border-emerald-400 hover:text-emerald-900 hover:shadow-lg"
           >
             Solicitar auditoría gratuita
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

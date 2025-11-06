@@ -31,12 +31,12 @@ export function BenefitsSection() {
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div className="space-y-8">
-            <span className="inline-flex items-center rounded-full border border-emerald-200 bg-white px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.32em] text-emerald-900/70">
-              Valor diferencial
+            <span className="inline-flex items-center rounded-full border border-emerald-200 bg-white px-4 py-2 text-xs font-semibold text-emerald-900/70">
+              Ventajas
             </span>
             <div className="space-y-6">
               <h2 className="font-heading text-4xl leading-tight text-slate-900 sm:text-[2.8rem]">
-                Delega tu tranquilidad en una correduría <span className="text-emerald-700">independiente</span>
+                Acompañamiento independiente para tus decisiones aseguradoras
               </h2>
               <p className="text-lg leading-relaxed text-slate-600">
                 Qonfianza nace para simplificar la gestión integral de seguros personales y corporativos, integrando
@@ -72,23 +72,23 @@ export function BenefitsSection() {
               })}
             </div>
 
-            <div className="rounded-[2.25rem] bg-gradient-to-br from-emerald-700 via-emerald-600 to-emerald-700 p-[1px] shadow-[0_38px_90px_-45px_rgba(12,116,93,0.65)]">
-              <div className="rounded-[2.2rem] bg-slate-900/75 px-10 py-12 text-center text-white sm:px-16">
-                <h3 className="font-heading text-3xl leading-tight">Solicita tu estudio personalizado sin coste</h3>
-                <p className="mt-4 text-sm leading-relaxed text-white/80">
+            <div className="rounded-[2.25rem] bg-gradient-to-br from-emerald-400 via-emerald-600 to-emerald-500 p-[1px] shadow-[0_38px_90px_-45px_rgba(12,116,93,0.5)]">
+              <div className="rounded-[2.2rem] bg-white/95 px-10 py-12 text-center text-slate-900 shadow-[0_18px_45px_-30px_rgba(12,116,93,0.45)] sm:px-16">
+                <h3 className="font-heading text-3xl leading-tight text-slate-900">
+                  Solicita tu estudio personalizado sin coste
+                </h3>
+                <p className="mt-4 text-base leading-relaxed text-slate-600">
                   Analizamos tu situación actual, diseñamos alternativas comparativas y te entregamos un dossier ejecutivo
                   con recomendaciones claras.
                 </p>
                 <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
                   <a
                     href="#contacto"
-                    className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-xs font-semibold uppercase tracking-[0.3em] text-emerald-700 transition-colors hover:text-emerald-900"
+                    className="inline-flex items-center gap-3 rounded-full bg-emerald-600 px-8 py-3 text-sm font-semibold text-white shadow-[0_18px_35px_-25px_rgba(12,116,93,0.55)] transition-colors hover:bg-emerald-700"
                   >
-                    Coordinar llamada
+                    Hablemos
                   </a>
-                  <span className="text-[0.7rem] font-semibold uppercase tracking-[0.32em] text-white/70">
-                    Respuesta en menos de 24h
-                  </span>
+                  <span className="text-sm font-medium text-emerald-700/90">Respuesta en menos de 24 h</span>
                 </div>
               </div>
             </div>
