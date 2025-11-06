@@ -1,4 +1,4 @@
-import { TrendingDownIcon, ShieldIcon, ClockIcon, CheckCircleIcon } from "./icons"
+import { CheckCircleIcon, ClockIcon, ShieldIcon, TrendingDownIcon } from "./icons"
 
 const benefits = [
   {
@@ -25,76 +25,72 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <section id="beneficios" className="relative overflow-hidden bg-white py-24 lg:py-32">
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-0 top-10 h-80 w-80 rounded-full bg-[#d6b35d]/10 blur-3xl" />
-        <div className="absolute bottom-0 right-0 h-[380px] w-[380px] rounded-full bg-[#0f5d4f]/10 blur-3xl" />
-      </div>
+    <section id="beneficios" className="relative overflow-hidden py-24 sm:py-32">
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white via-emerald-50/40 to-white" />
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="grid items-start gap-16 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="space-y-10">
-            <span className="inline-flex items-center gap-2 rounded-full border border-[#0f5d4f]/15 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-[#0f5d4f]/70">
+        <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div className="space-y-8">
+            <span className="inline-flex items-center rounded-full border border-emerald-200 bg-white px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.32em] text-emerald-900/70">
               Valor diferencial
             </span>
-            <h2 className="text-4xl leading-tight text-[#0b1f24] lg:text-5xl">
-              Delega tu tranquilidad en una correduría{' '}
-              <span className="text-[#0f5d4f]">independiente</span>
-            </h2>
-            <p className="text-lg text-[#385057]">
-              Qonfianza nace para simplificar la gestión integral de seguros personales y corporativos, integrando
-              experiencia técnica, cercanía y negociación con las principales aseguradoras del mercado.
-            </p>
-            <div className="rounded-3xl border border-[#d6b35d]/30 bg-[#d6b35d]/10 p-8 text-[#0b1f24] shadow-sm backdrop-blur">
-              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#0f5d4f]/70">Compromiso boutique</p>
-              <p className="mt-3 text-lg leading-relaxed">
-                Acompañamos cada siniestro y revisión de pólizas como si fuera propio, con la confidencialidad y
-                discreción que exige un servicio de alto nivel.
+            <div className="space-y-6">
+              <h2 className="font-heading text-4xl leading-tight text-slate-900 sm:text-[2.8rem]">
+                Delega tu tranquilidad en una correduría <span className="text-emerald-700">independiente</span>
+              </h2>
+              <p className="text-lg leading-relaxed text-slate-600">
+                Qonfianza nace para simplificar la gestión integral de seguros personales y corporativos, integrando
+                experiencia técnica, negociación especializada y una relación directa contigo.
+              </p>
+            </div>
+
+            <div className="rounded-[2rem] border border-emerald-100 bg-white/90 p-8 shadow-[0_32px_80px_-55px_rgba(12,116,93,0.35)]">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-800/70">Compromiso boutique</p>
+              <p className="mt-4 leading-relaxed text-slate-600">
+                Acompañamos cada siniestro y revisión de pólizas como si fuera propio, actuando como tu socio estratégico
+                y confidencial.
               </p>
             </div>
           </div>
 
-          <div className="relative rounded-[2.5rem] border border-[#0f5d4f]/15 bg-white/70 p-10 shadow-[0_40px_100px_-60px_rgba(15,61,79,0.55)] backdrop-blur">
-            <span className="absolute inset-x-10 top-12 h-px bg-gradient-to-r from-transparent via-[#0f5d4f]/10 to-transparent" />
-            <div className="relative mt-4 grid gap-10">
-              {benefits.map((benefit, index) => {
+          <div className="space-y-10">
+            <div className="grid gap-6 sm:grid-cols-2">
+              {benefits.map((benefit) => {
                 const Icon = benefit.icon
                 return (
-                  <div key={benefit.title} className="relative pl-16">
-                    <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-2xl border border-[#0f5d4f]/20 bg-[#0f5d4f]/10 text-[#0f5d4f]">
+                  <div
+                    key={benefit.title}
+                    className="rounded-[1.5rem] border border-emerald-100 bg-white/95 p-6 shadow-[0_24px_60px_-50px_rgba(12,116,93,0.35)] transition-transform duration-300 hover:-translate-y-1"
+                  >
+                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
                       <Icon className="h-6 w-6" />
                     </div>
-                    <div className="space-y-3">
-                      <h3 className="text-xl font-semibold text-[#0b1f24]">{benefit.title}</h3>
-                      <p className="text-base leading-relaxed text-[#385057]">{benefit.description}</p>
-                    </div>
-                    {index !== benefits.length - 1 && (
-                      <span className="absolute left-6 top-12 h-[90%] w-px bg-gradient-to-b from-[#0f5d4f]/20 via-[#0f5d4f]/10 to-transparent" />
-                    )}
+                    <h3 className="font-heading text-xl text-slate-900">{benefit.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600">{benefit.description}</p>
                   </div>
                 )
               })}
             </div>
-          </div>
-        </div>
 
-        <div className="relative mt-24 overflow-hidden rounded-[2.75rem] border border-[#0f5d4f]/10 bg-gradient-to-br from-[#0f5d4f] via-[#0b3b32] to-[#0a2722] px-8 py-14 text-center text-white shadow-[0_40px_120px_-50px_rgba(7,46,39,0.85)]">
-          <div className="mx-auto flex max-w-3xl flex-col gap-6">
-            <h3 className="text-3xl font-semibold lg:text-4xl">Solicita tu estudio personalizado sin coste</h3>
-            <p className="text-lg text-white/75">
-              Analizamos tu situación actual, diseñamos alternativas comparativas y te entregamos un dossier ejecutivo con
-              recomendaciones claras.
-            </p>
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <a
-                href="#contacto"
-                className="inline-flex items-center justify-center gap-3 rounded-full bg-white/95 px-8 py-4 text-sm font-semibold uppercase tracking-[0.3em] text-[#0f5d4f] transition-all duration-300 hover:bg-white"
-              >
-                Coordinar llamada
-              </a>
-              <span className="text-xs font-medium uppercase tracking-[0.35em] text-white/60">
-                Respuesta en menos de 24h
-              </span>
+            <div className="rounded-[2.25rem] bg-gradient-to-br from-emerald-700 via-emerald-600 to-emerald-700 p-[1px] shadow-[0_38px_90px_-45px_rgba(12,116,93,0.65)]">
+              <div className="rounded-[2.2rem] bg-slate-900/75 px-10 py-12 text-center text-white sm:px-16">
+                <h3 className="font-heading text-3xl leading-tight">Solicita tu estudio personalizado sin coste</h3>
+                <p className="mt-4 text-sm leading-relaxed text-white/80">
+                  Analizamos tu situación actual, diseñamos alternativas comparativas y te entregamos un dossier ejecutivo
+                  con recomendaciones claras.
+                </p>
+                <div className="mt-6 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                  <a
+                    href="#contacto"
+                    className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-xs font-semibold uppercase tracking-[0.3em] text-emerald-700 transition-colors hover:text-emerald-900"
+                  >
+                    Coordinar llamada
+                  </a>
+                  <span className="text-[0.7rem] font-semibold uppercase tracking-[0.32em] text-white/70">
+                    Respuesta en menos de 24h
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
